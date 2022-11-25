@@ -1,0 +1,28 @@
+.intro {
+    padding: 25vh;
+}
+
+.main-intro {
+    color: whitesmoke;
+    text-shadow: 5px 5px 8px turquoise;
+    padding: 0 0 5vh 0;
+}
+
+.intro > p{
+    color: aquamarine;
+}
+
+.intro > a{
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.intro > a:hover{
+    color: whitesmoke;
+}
+
+@media (300px < width < 640px) {
+    .intro {
+        padding: 15vh 10vh;
+    }
+}

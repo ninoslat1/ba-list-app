@@ -1,0 +1,42 @@
+.selection {
+  margin-top: -5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.head {
+  color: whitesmoke;
+  text-shadow: 5px 5px 8px turquoise;
+}
+
+li {
+  font-size: 1.25rem;
+}
+
+.my-BG {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 1)) ,url(https://api-blue-archive.vercel.app/_next/image?url=%2FBlue-Archive-Cover.jpg&w=1200&q=75);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.studentImage {
+  height: auto;
+  margin: 1rem;
+  padding: 1rem;
+  border: none;
+}
+
+.images {
+  height: auto;
+}
+
+@media (300px < width < 640px) {
+  .studentImage {
+    height: auto;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}

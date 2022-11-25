@@ -1,10 +1,12 @@
+import {lazy, Suspense} from 'react'
 import NavigationBar from './components/NavigationBar'
 import Intro from './components/Intro'
 import "./style/page.css"
 import { Routes, Link, Route } from 'react-router-dom'
-import Explosive from "./components/Explosive"
-import Penetration from "./components/Penetration"
-import Mystic from "./components/Mystic"
+
+const Explosive = lazy(() => import("./components/Explosive"))
+const Penetration = lazy(() => import("./components/Penetration"))
+const Mystic = lazy(() => import("./components/Mystic"))
 
 function App() {
   return (
@@ -28,11 +30,16 @@ function App() {
         </div>
       </div>
       <div>
-        <Routes>
-          <Route path="/explosive" element={<Explosive />}/>
-          <Route path="/penetration" element={<Penetration />}/>
-          <Route path="/mystic" element={<Mystic />}/>
-        </Routes>
+        <Suspense fallback={<div><h1 className='text-center p-3'>Loading</h1>
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div></div>}>
+          <Routes>
+            <Route path="/explosive" element={<Explosive />}/>
+            <Route path="/penetration" element={<Penetration />}/>
+            <Route path="/mystic" element={<Mystic />}/>
+          </Routes>
+        </Suspense>
       </div>
     </div>
   );

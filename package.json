@@ -1,8 +1,8 @@
 {
+  "homepage": "http://ninoslat1.github.io/ba-list-app",
   "name": "ba-list-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ninoslat1.github.io/ba-character-list-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

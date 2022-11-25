@@ -30,10 +30,10 @@ function App() {
         </div>
       </div>
       <div>
-        <Suspense fallback={<div><h1 className='text-center p-3'>Loading</h1>
-          <div class="spinner-border" role="status">
-            <span class="sr-only">Loading...</span>
-          </div></div>}>
+        <Suspense fallback={
+          <div className="d-flex flex-row justify-content-center align-items-center p-5">
+            <div className="spinner-border p-1" role="status"></div>
+          </div>}>
           <Routes>
             <Route path="/explosive" element={<Explosive />}/>
             <Route path="/penetration" element={<Penetration />}/>

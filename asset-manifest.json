@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ba-list-app/static/css/main.0229d496.css",
+    "main.js": "/ba-list-app/static/js/main.80df8914.js",
+    "index.html": "/ba-list-app/index.html",
+    "main.0229d496.css.map": "/ba-list-app/static/css/main.0229d496.css.map",
+    "main.80df8914.js.map": "/ba-list-app/static/js/main.80df8914.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0229d496.css",
+    "static/js/main.80df8914.js"
+  ]
+}

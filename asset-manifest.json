@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/ba-list-app/static/css/main.249f4bb5.css",
-    "main.js": "/ba-list-app/static/js/main.fe4ed8af.js",
-    "static/js/74.92ef7eb9.chunk.js": "/ba-list-app/static/js/74.92ef7eb9.chunk.js",
+    "main.js": "/ba-list-app/static/js/main.b3fc24fb.js",
+    "static/js/74.57dbe39b.chunk.js": "/ba-list-app/static/js/74.57dbe39b.chunk.js",
     "static/js/820.e67ad126.chunk.js": "/ba-list-app/static/js/820.e67ad126.chunk.js",
     "static/media/Blue-Archive-Cover.webp": "/ba-list-app/static/media/Blue-Archive-Cover.64aa77aa49278a1720e0.webp",
     "index.html": "/ba-list-app/index.html",
     "main.249f4bb5.css.map": "/ba-list-app/static/css/main.249f4bb5.css.map",
-    "main.fe4ed8af.js.map": "/ba-list-app/static/js/main.fe4ed8af.js.map",
-    "74.92ef7eb9.chunk.js.map": "/ba-list-app/static/js/74.92ef7eb9.chunk.js.map",
+    "main.b3fc24fb.js.map": "/ba-list-app/static/js/main.b3fc24fb.js.map",
+    "74.57dbe39b.chunk.js.map": "/ba-list-app/static/js/74.57dbe39b.chunk.js.map",
     "820.e67ad126.chunk.js.map": "/ba-list-app/static/js/820.e67ad126.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.249f4bb5.css",
-    "static/js/main.fe4ed8af.js"
+    "static/js/main.b3fc24fb.js"
   ]
 }

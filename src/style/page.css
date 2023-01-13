@@ -1,14 +1,9 @@
 .selection {
-  margin-top: -5rem;
+  margin-top: -10rem;
 }
 
 a {
   text-decoration: none;
-}
-
-.head {
-  color: whitesmoke;
-  text-shadow: 5px 5px 8px turquoise;
 }
 
 li {
@@ -22,6 +17,44 @@ li {
     background-size: cover;
 }
 
+summary {
+  outline: none;
+  display: block;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  padding: auto;
+  padding-top: 2vh;
+  width: 100vw;
+}
+details {
+  margin: auto;
+  box-sizing: border-box;
+  background: transparent;
+}
+details summary::-webkit-details-marker {
+  display:none;
+}
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 1.5rem;
+  left: 42.5vw;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
+.studentWrapper {
+  padding: 0.5rem;
+}
+
 .studentImage {
   height: auto;
   margin: 1rem;
@@ -33,10 +66,51 @@ li {
   height: auto;
 }
 
+@media (width > 1200px){
+  .school-list {
+    display: inline-flex;
+  }
+}
+
+@media (1200px < width < 1200px){
+  summary:before {
+    top: 1.5rem;
+    left: 27.5vw;
+  }
+  .school-list {
+    display: inline-flex;
+  }
+}
+
+@media (650px < width < 1200px) {
+  summary:before {
+    top: 1.5rem;
+    left: 35vw;
+  }
+  .my-BG {
+    height: 125vh;
+  }
+}
+
 @media (300px < width < 640px) {
   .studentImage {
     height: auto;
     margin: 0.5rem;
     padding: 0.5rem;
   }
+  details {
+    padding-top: 2vh;
+  }
+  summary {
+    padding-top: 4vh;
+  }
+  summary:before {
+    top: 2.25rem;
+    left: 25vw;
+  }
+
+  .my-BG {
+    height: 125vh;
+  }
+
 }

@@ -26,7 +26,7 @@ const Mystic = () => {
             <Col md={4} className="studentWrapper" id="mystic" key={index}>
               <Card className="studentImage">
               <Image src={result.photoUrl} alt={`${result.name}`} className="images rounded-top" />
-              <div className="bg-dark rounded-bottom">
+              <div className="bg-light rounded-bottom">
                 <div className="p-2 m-1 text-primary">
                   <Card.Title className="text-center">{result.name}</Card.Title>
                   <Card.Text className="text-left">
@@ -37,7 +37,7 @@ const Mystic = () => {
                   <b>Birthday : </b>{result.birthday}
                   </Card.Text>
                   <Card.Text className="text-left">
-                  <b>School : </b>{result.school}
+                  <b>School : </b><img src={result.imageSchool}/> ({result.school})
                   </Card.Text>
                 </div>
               </div>

@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react'
 import {Card,Container,Row,Col,Image} from 'react-bootstrap'
 import axios from 'axios'
 
-const Penetration = () => {
+const Arius = () => {
     const [character, setCharacter] =   useState([])
     useEffect(() => {
         axios.get(`${process.env.REACT_APP_BASE_URL}/api/characters`, {
             params: {
-                damageType: 'Penetration'
+                school: 'Arius'
             }
         }).then((response) => {
            setCharacter(response.data.data)
@@ -18,16 +18,18 @@ const Penetration = () => {
         <div>
           <Container>
             <br />
-            <h1 className="text-black text-center">Penetration-type Student</h1>
+            <h1 className="text-black text-center">
+              <img src='https://static.miraheze.org/bluearchivewiki/thumb/9/93/Arius.png/50px-Arius.png' className='px-5' alt='Arius School Logo'/>Arius Student
+            </h1>
             <br />
             <Row>
           {character.map((result, index) => {
             return (
-            <Col md={4} className="studentWrapper" id="penetration" key={index}>
+            <Col md={4} className="studentWrapper" id="Arius" key={index}>
               <Card className="studentImage">
               <Image src={result.photoUrl} alt={`${result.name}`} className="images rounded-top" />
-              <div className="bg-dark rounded-bottom">
-                <div className="p-2 m-1 text-warning">
+              <div className="bg-light rounded-bottom">
+                <div className="p-2 m-1 text-dark">
                   <Card.Title className="text-center">{result.name}</Card.Title>
                   <Card.Text className="text-left">
                     <b>Details</b>
@@ -37,7 +39,7 @@ const Penetration = () => {
                   <b>Birthday : </b>{result.birthday}
                   </Card.Text>
                   <Card.Text className="text-left">
-                  <b>School : </b>{result.school}
+                  <b>Damage Type : </b>{result.damageType}
                   </Card.Text>
                 </div>
               </div>
@@ -51,4 +53,4 @@ const Penetration = () => {
       )
 }
 
-export default Penetration
+export default Arius

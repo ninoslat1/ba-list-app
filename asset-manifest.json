@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ba-list-app/static/css/main.65d95570.css",
+    "main.css": "/ba-list-app/static/css/main.60587b02.css",
     "main.js": "/ba-list-app/static/js/main.d68cc05c.js",
     "static/js/194.e35e0f61.chunk.js": "/ba-list-app/static/js/194.e35e0f61.chunk.js",
     "static/js/66.1ab7a3b6.chunk.js": "/ba-list-app/static/js/66.1ab7a3b6.chunk.js",
@@ -16,7 +16,7 @@
     "static/js/932.521a8242.chunk.js": "/ba-list-app/static/js/932.521a8242.chunk.js",
     "static/js/820.e67ad126.chunk.js": "/ba-list-app/static/js/820.e67ad126.chunk.js",
     "index.html": "/ba-list-app/index.html",
-    "main.65d95570.css.map": "/ba-list-app/static/css/main.65d95570.css.map",
+    "main.60587b02.css.map": "/ba-list-app/static/css/main.60587b02.css.map",
     "main.d68cc05c.js.map": "/ba-list-app/static/js/main.d68cc05c.js.map",
     "194.e35e0f61.chunk.js.map": "/ba-list-app/static/js/194.e35e0f61.chunk.js.map",
     "66.1ab7a3b6.chunk.js.map": "/ba-list-app/static/js/66.1ab7a3b6.chunk.js.map",
@@ -33,7 +33,7 @@
     "820.e67ad126.chunk.js.map": "/ba-list-app/static/js/820.e67ad126.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65d95570.css",
+    "static/css/main.60587b02.css",
     "static/js/main.d68cc05c.js"
   ]
 }

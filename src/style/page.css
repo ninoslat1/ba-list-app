@@ -74,7 +74,7 @@ summary:before {
 
 @media (1200px < width < 1200px){
   summary:before {
-    top: 1.5rem;
+    top: 2.5rem;
     left: 27.5vw;
   }
   .school-list {

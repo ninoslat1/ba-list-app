@@ -3,20 +3,8 @@ import NavigationBar from './components/NavigationBar'
 import Intro from './components/Intro'
 import "./style/page.css"
 import { Routes, Link, Route } from 'react-router-dom'
-import { Container } from 'react-bootstrap'
 
-const Explosive = lazy(() => import("./components/damage/Explosive"))
-const Penetration = lazy(() => import("./components/damage/Penetration"))
-const Mystic = lazy(() => import("./components/damage/Mystic"))
-const RedWinter = lazy(() => import('./components/school/RedWinter'))
-const Abydos = lazy(() => import('./components/school/Abydos'))
-const Gehenna = lazy(() => import('./components/school/Gehenna'))
-const Millennium = lazy(() => import('./components/school/Millennium'))
-const Hyakkiyako = lazy(() => import('./components/school/Hyakkiyako'))
-const Valkyrie = lazy(() => import('./components/school/Valkyrie'))
-const Shanhaijing = lazy(() => import('./components/school/Shanhaijing'))
-const Arius = lazy(() => import('./components/school/Arius'))
-const SRT = lazy(() => import('./components/school/SRT'))
+const Student = lazy(() => import('./components/student'))
 
 function App() {
   return (
@@ -31,13 +19,13 @@ function App() {
             <summary><h4>Damage Type</h4></summary>
             <ul className="d-flex list-unstyled justify-content-center pt-2">
                 <li>
-                    <Link to="/explosive" className='text-decoration-none px-2 text-white'>Explosive</Link>
+                    <Link to="/Explosive" className='text-decoration-none px-2 text-white'>Explosive</Link>
                 </li>
                 <li>
-                    <Link to="/penetration" className='text-decoration-none px-2 text-white'>Penetration</Link>
+                    <Link to="/Penetration" className='text-decoration-none px-2 text-white'>Penetration</Link>
                 </li>
                 <li>
-                    <Link to="/mystic" className='text-decoration-none px-2 text-white'>Mystic</Link>
+                    <Link to="/Mystic" className='text-decoration-none px-2 text-white'>Mystic</Link>
                 </li>
             </ul>
           </details>
@@ -82,19 +70,43 @@ function App() {
             <div className="spinner-border p-1" role="status"></div>
           </div>}>
           <Routes>
-            <Route path="/explosive" element={<Explosive />}/>
-            <Route path="/penetration" element={<Penetration />}/>
-            <Route path="/mystic" element={<Mystic />}/>
+            <Route path="/Explosive" element={
+              <Student style={{ color: '#DC4C64' }} type={'damageType'} value={'Explosive'}/>
+            }/>
+            <Route path="/Penetration" element={
+              <Student style={{ color: '#E4A11B'}} type={'damageType'} value={'Penetration'}/>
+            }/>
+            <Route path="/Mystic" element={
+              <Student style={{color: '#54B4D3'}} type={'damageType'} value={'Mystic'}/>
+            }/>
 
-            <Route path='/Red_Winter' element={<RedWinter/>}/>
-            <Route path='/Abydos' element={<Abydos/>}/>
-            <Route path='/Gehenna' element={<Gehenna/>}/>
-            <Route path='/Millennium' element={<Millennium/>}/>
-            <Route path='/Hyakkiyako' element={<Hyakkiyako/>}/>
-            <Route path='/Valkyrie' element={<Valkyrie/>}/>
-            <Route path='/Shanhaijing' element={<Shanhaijing/>}/>
-            <Route path='/Arius' element={<Arius/>}/>
-            <Route path='/SRT' element={<SRT/>}/>
+            <Route path='/Red_Winter' element={
+              <Student style={{color: '#DC4C64'}} type={'school'} value={'Red Winter'}/>
+            }/>
+            <Route path='/Abydos' element={
+              <Student style={{color: '#3B71CA'}} type={'school'} value={'Abydos'}/>
+            }/>
+            <Route path='/Gehenna' element={
+              <Student style={{color: '#54B4D3'}} type={'school'} value={'Gehenna'}/>
+            }/>
+            <Route path='/Millennium' element={
+              <Student style={{color: 'white'}} type={'school'} value={'Millennium'}/>
+            }/>
+            <Route path='/Hyakkiyako' element={
+              <Student style={{color: '#DC4C64'}} type={'school'} value={'Hyakkiyako'}/>
+            }/>
+            <Route path='/Valkyrie' element={
+              <Student style={{color: 'white'}} type={'school'} value={'Valkyrie'}/>
+            }/>
+            <Route path='/Shanhaijing' element={
+              <Student style={{color: 'grey'}} type={'school'} value={'Shanhaijing'}/>
+            }/>
+            <Route path='/Arius' element={
+              <Student style={{color: '#477eb0'}} type={'school'} value={'Arius'}/>
+            }/>
+            <Route path='/SRT' element={
+              <Student style={{color: '#3B71CA'}} type={'school'} value={'SRT'}/>
+            }/>
           </Routes>
         </Suspense>
       </div>
